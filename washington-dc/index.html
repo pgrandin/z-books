@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Flipbook</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+    <style>
+        #flipbook {
+            width: 800px;
+            height: 600px;
+        }
+        #flipbook .page {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div id="flipbook">
+    <div class="page" style="background-image: url('0.png');"></div>
+    <div class="page" style="background-image: url('1.png');"></div>
+    <div class="page" style="background-image: url('2.png');"></div>
+    <div class="page" style="background-image: url('3.png');"></div>
+    <div class="page" style="background-image: url('4.png');"></div>
+    <div class="page" style="background-image: url('5.png');"></div>
+    <div class="page" style="background-image: url('6.png');"></div>
+    <div class="page" style="background-image: url('7.png');"></div>
+    <div class="page" style="background-image: url('8.png');"></div>
+    <div class="page" style="background-image: url('9.png');"></div>
+    <!-- Make sure you have the correct path for your images -->
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#flipbook').turn({
+            autoCenter: true
+        });
+    });
+</script>
+
+</body>
+</html>
+
